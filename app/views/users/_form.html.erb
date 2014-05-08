@@ -2,29 +2,7 @@
   <div class="row">
       <div id="top_profile_form_area" class="row">
         <div class="large-5 columns">
-          <%= form_for(@image, :html => {:multipart => true, :id => "upload_profile_photo"}, :remote => true) do |f| %>
-            <div id="upload_profile_photo_container" class="row">
-              <div>
-                <%= image_tag((@user.profile_image ? @user.profile_image  : "default_pic.jpg"), :alt => "This is you! (?)", :id => "profile_photo_preview", :class => "img-polaroid") %>
-              </div>
-  
-              <div>
-                <div id="profile_photo_before">
-                  <%= f.submit "Upload", :style => "display: none" %>
-                  <div id="functional_file_button">
-                    <%= f.file_field :file, :id => "profile_photo_field" %>
-                  </div>
-                  <p id="chooseface">Choose your face</p>
-                </div>
-                <div id="profile_photo_after" style="display: none">
-                  <%= image_tag("loading.gif", :alt => "Loading...") %>
-                </div>
-                <div id="profile_photo_success" style="display: none">
-                  <i class="icon-ok">Photo Uploaded Succesfully</i>
-                </div>
-              </div>
-            </div>
-          <% end %>
+          
         </div>
       
         <div class="large-7 columns">

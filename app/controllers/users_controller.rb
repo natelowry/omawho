@@ -84,7 +84,7 @@ class UsersController < ApplicationController
   # POST /users
   def create
     @user = User.new(params[:user])
-    @image =  Image.find(params[:user][:profile_image_id])
+    #@image =  Image.find(params[:user][:profile_image_id])
     #@user.images << @image 
     @categories = Category.cached_all()
 

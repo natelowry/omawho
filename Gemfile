@@ -32,7 +32,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'unicorn'
+#gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -47,7 +47,7 @@ gem 'sorcery'
 gem 'unf'
 gem 'fog'
 gem 'carrierwave'
-gem 'rmagick', :require => 'RMagick'
+#gem 'rmagick', :require => 'RMagick'
 gem 'remotipart'
 gem 'quiet_assets', :group => :development
 gem 'pry', :group => :development
