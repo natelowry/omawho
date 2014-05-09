@@ -65,7 +65,7 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
-    @image = Image.find(@user.profile_image_id)
+    #@image = Image.find(@user.profile_image_id)
     @categories = Category.cached_all()
     if current_user.admin?
       #do nothing, proceed to edit page
@@ -101,7 +101,7 @@ class UsersController < ApplicationController
   # PUT /users/1
   def update
     @user = User.find(params[:id])
-    @image = Image.find(@user.profile_image_id)
+    #@image = Image.find(@user.profile_image_id)
     @categories = Category.cached_all()
     
     respond_to do |format|
